@@ -1,0 +1,5 @@
+_target_: src.data.gan_datamodule.GAN_DataModule
+batch_size: 32 
+train_val_test_split: [50_000, 10_000, 10_000]
+num_workers: 0
+pin_memory: False

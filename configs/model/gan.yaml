@@ -1,0 +1,14 @@
+_target_: src.models.gan_module.GAN
+latent_dim: 100
+
+optimizer:
+  _target_: torch.optim.Adam
+  _partial_: true
+  lr: 1e-4
+  weight_decay: 0.0
+
+# net:
+#   _target_: src.models.components.gan_component
+  
+
+

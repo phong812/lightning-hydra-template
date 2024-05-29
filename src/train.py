@@ -82,6 +82,7 @@ def train(cfg: DictConfig) -> Tuple[Dict[str, Any], Dict[str, Any]]:
         log.info("Logging hyperparameters!")
         log_hyperparameters(object_dict)
 
+    
     if cfg.get("train"):
         log.info("Starting training!")
         trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
